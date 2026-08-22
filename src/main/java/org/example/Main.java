@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -31,11 +32,23 @@ public class Main {
 
       // Segundo loop é pra pegar as 3 notas desse aluno
       for (int j = 0; j < 3; j++) {
+        while (true) {
+          try {
+            System.out.print("Digite a nota " + (j + 1) + " do " + nomeDoAluno + ": ");
+            double nota = scanner.nextDouble();
 
-        // Pergunta as notas e armazena na lista notasDoAluno
-        System.out.print("Digite a nota " + (j + 1) + " do " + nomeDoAluno + ": ");
-        double nota = scanner.nextDouble();
-        notasDoAluno[j] = nota;
+            if (nota >= 0 && nota <= 10) {
+              notasDoAluno[j] = nota;
+              break; // Nota correta e do tipo certo! Sai do while e avança o j
+            } else {
+              System.out.println("A nota deve ser entre 0 e 10. Tente novamente.");
+            }
+
+          } catch (InputMismatchException e) {
+            System.out.println("Erro: Você deve digitar um número válido. Tente novamente.");
+            scanner.next(); // Limpa o texto incorreto do scanner para não travar em loop infinito
+          }
+        }
       }
       // Pega a lista de notasDoAluno soma elas e depois armazena na lista medias na posição específica do aluno
       double notasSomadas = Arrays.stream(notasDoAluno).sum();
