@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c36fe4a1-1592-4868-b21b-610507369d5e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/backend-aulas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cadastro-alunos/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/EXERCICIOS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/main/java/app/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/main/java/contas/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/main/java/contas/ContaCorrente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/main/java/contas/ContaInvestimento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/main/java/contas/ContaPoupanca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/main/java/investimentos/Acao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/main/java/tributaveis/Tributavel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/test/java/app/PolimorfismoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/test/java/contas/ContaCorrenteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/test/java/contas/ContaPoupancaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/test/java/contas/ContaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exemplo-poo/src/test/java/investimentos/AcaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3IH95u46WAtlmzq82eaEjl8vd3q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/gtoma/Desktop/backend-aulas/exemplo-poo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/gtoma/Desktop/backend-aulas/exemplo-poo/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "terminal"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gtoma\Desktop\backend-aulas\exemplo-poo" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c36fe4a1-1592-4868-b21b-610507369d5e" name="Changes" comment="" />
+      <created>1787410448253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787410448253</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="startingDirectory" value="C:\Program Files\Git\bin\bash.exe" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/exemplo-poo/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/exemplo-poo/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
