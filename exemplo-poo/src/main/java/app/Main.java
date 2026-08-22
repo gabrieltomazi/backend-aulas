@@ -98,6 +98,7 @@ package app;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import contas.Conta;
 import contas.ContaCorrente;
 import contas.ContaPoupanca;
 import investimentos.Acao;
@@ -173,13 +174,14 @@ public class Main {
         // Exercício 1: torne Conta abstract (ela é um conceito, ninguém tem uma "conta genérica").
         // Depois descomente o bloco abaixo, adicione "import contas.Conta;" lá em cima
         // e observe o que compila e o que não compila.
-        /*
+
         // Array de Conta guardando duas SUBCLASSES diferentes.
         Conta[] listaContas = {ccNatan, cpWesley};
 
         // Hoje esta linha compila. Depois que Conta virar abstract, vira erro de compilação --
         // e repare que os argumentos estão certos: o problema não é o construtor, é o "new".
-        Conta contaGenerica = new Conta("Fulano", "0000-0");
+//        Conta contaGenerica = new Conta("Fulano", "0000-0");
+        Conta contaGenerica = new ContaCorrente("Fulano", "0000-0");
 
         // Polimorfismo puro: a variável é do tipo Conta, mas cada objeto aplica a SUA regra.
         // Linha separadora.
@@ -205,7 +207,7 @@ public class Main {
 
         // Fim do for.
         }
-        */
+
         // ------------------------------------------------------------------------------------------------------
         // Linha em branco separando os blocos da saída.
         System.out.println();

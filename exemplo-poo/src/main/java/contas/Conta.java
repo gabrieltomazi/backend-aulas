@@ -22,7 +22,7 @@ import tributaveis.Tributavel;
 // constantes -> atributos -> construtores -> métodos de negócio -> métodos privados ->
 // getters/setters -> toString(). Não é obrigatório para compilar, mas todo projeto real segue.
 // public abstract class Conta implements Tributavel {
-public class Conta implements Tributavel {
+public abstract class Conta implements Tributavel {
 
     // ---------------------------------------------------------------- constantes
 
