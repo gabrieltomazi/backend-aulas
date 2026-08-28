@@ -16,11 +16,11 @@ package contas;
 //  LUCRO. Aplicou R$ 1.000 e o saldo está R$ 1.100? O IR de 22,5% incide sobre
 //  os R$ 100 de rendimento. Sem lucro, imposto zero.
 //
-//  1. TODO: constante  private static final double ALIQUOTA_IR = 0.225;
-//  2. TODO: atributo   private double totalAplicado;   (soma do que o cliente depositou)
-//  3. TODO: sobrescrever depositar(double, String) para somar em totalAplicado
-//  4. TODO: criar aplicarRendimento(double percentual)
-//  5. TODO: sobrescrever calcularImposto() -> (saldo - totalAplicado) * ALIQUOTA_IR,
+//  1. [X] TODO: constante  private static final double ALIQUOTA_IR = 0.225;
+//  2. [X] TODO: atributo   private double totalAplicado;   (soma do que o cliente depositou)
+//  3. [X] TODO: sobrescrever depositar(double, String) para somar em totalAplicado
+//  4. [X] TODO: criar aplicarRendimento(double percentual)
+//  5. [X] TODO: sobrescrever calcularImposto() -> (saldo - totalAplicado) * ALIQUOTA_IR,
 //           nunca negativo
 //
 //  CUIDADO: o rendimento não é dinheiro aplicado pelo cliente, é lucro. Se o
@@ -32,13 +32,16 @@ package contas;
 //      depositar(1000)          -> saldo 1000.00 | imposto  0.00
 //      aplicarRendimento(0.10)  -> saldo 1100.00 | imposto 22.50
 //
-//  TODO do EXERCÍCIO 3: quando Conta ganhar o método abstrato tipoDeConta(),
+//  [X] TODO do EXERCÍCIO 3: quando Conta ganhar o método abstrato tipoDeConta(),
 //  esta classe para de compilar até implementá-lo. Devolva "Investimento".
 //
 // ============================================================================
 
 // >>> HERANÇA: ContaInvestimento É uma Conta -- por enquanto, só isso.
 public class ContaInvestimento extends Conta {
+
+    private static final double ALIQUOTA_IR = 0.225;
+    private double totalAplicado;
 
     // >>> OBJETO + HERANÇA: construtor não se herda; só repassa para a mãe.
     public ContaInvestimento(String titular, String numero) {
@@ -52,7 +55,29 @@ public class ContaInvestimento extends Conta {
     @Override
     public String tipoDeConta(){
         return "Investimento";
-    };
+    }
+
+    @Override
+    public void depositar(double valor, String descricao){
+        super.depositar(valor, descricao);
+        this.totalAplicado += valor;
+    }
+
+    public void aplicarRendimento(double percentual){
+    if(percentual > 0){
+        double rendimento = getSaldo() * percentual;
+        super.depositar(rendimento, String.format("Rendimento (%.1f%%)", percentual * 100));
+        }
+    }
+
+    @Override
+    public double calcularImposto(){
+        double lucro = getSaldo() - this.totalAplicado;
+        if(lucro > 0){
+            return lucro * ALIQUOTA_IR;
+        }
+        return 0.0;
+    }
 
 // Fim da classe ContaInvestimento.
 }
