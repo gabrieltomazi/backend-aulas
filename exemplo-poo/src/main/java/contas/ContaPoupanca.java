@@ -42,5 +42,10 @@ public class ContaPoupanca extends Conta {
     // Fim de aplicarRendimento().
     }
 
+    @Override
+    public String tipoDeConta(){
+        return "Poupança";
+    };
+
 // Fim da classe ContaPoupanca.
 }

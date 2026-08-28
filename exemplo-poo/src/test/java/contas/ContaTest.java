@@ -154,7 +154,7 @@ class ContaTest {
     void extratoMostraClasseReal() {
         Conta conta = new ContaPoupanca("Ana", "1111-1");
 
-        assertTrue(conta.toString().contains("(ContaPoupanca)"));
+        assertTrue(conta.toString().contains("(Poupança)"));
     }
 
     @Test

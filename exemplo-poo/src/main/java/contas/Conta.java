@@ -251,6 +251,8 @@ public abstract class Conta implements Tributavel {
     // Fim de getNumero().
   }
 
+  public abstract String tipoDeConta();
+
   // ---------------------------------------------------------------- toString
 
   // toString() já existe em Object; aqui estamos SOBRESCREVENDO a versão herdada.
@@ -273,7 +275,7 @@ public abstract class Conta implements Tributavel {
     // >>> POLIMORFISMO visível na tela: getClass().getSimpleName() devolve o nome da classe
     // REAL do objeto, decidido em tempo de execução. Este código está escrito dentro de
     // Conta, mas imprime "ContaCorrente" ou "ContaPoupanca", conforme quem chamou.
-    extrato += "Conta   : " + this.numero + "  (" + getClass().getSimpleName() + ")\n";
+    extrato += "Conta   : " + this.numero + "  (" + tipoDeConta() + ")\n";
 
     // Linha simples separa o cabeçalho dos lançamentos.
     extrato += "-".repeat(LARGURA) + "\n";

@@ -49,5 +49,10 @@ public class ContaInvestimento extends Conta {
     // Fim do construtor.
     }
 
+    @Override
+    public String tipoDeConta(){
+        return "Investimento";
+    };
+
 // Fim da classe ContaInvestimento.
 }

@@ -24,4 +24,9 @@ public class ContaEstrangeira extends Conta {
     super.depositar(valorEmDolar, "Depósito (US$)");
   }
 
+  @Override
+  public String tipoDeConta(){
+    return "Conta em Dólar";
+  };
+
 }

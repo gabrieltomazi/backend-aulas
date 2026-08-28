@@ -81,6 +81,10 @@ public class ContaCorrente extends Conta {
 
     // Fim de sacar().
     }
+    @Override
+    public String tipoDeConta(){
+        return "Conta Corrente";
+    };
 
 // Fim da classe ContaCorrente.
 }
