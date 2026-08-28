@@ -99,10 +99,7 @@ package app;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import contas.Conta;
-import contas.ContaCorrente;
-import contas.ContaEstrangeira;
-import contas.ContaPoupanca;
+import contas.*;
 import investimentos.Acao;
 import tributaveis.Tributavel;
 
@@ -254,6 +251,12 @@ public class Main {
     //
     // O <Tributavel> entre os sinais de menor/maior diz: só entra quem assina o contrato.
     ArrayList<Tributavel> listaTributaveis = new ArrayList<>();
+
+    ContaInvestimento contaInv = new ContaInvestimento("Natan", "7777-7");
+    contaInv.depositar(1000.0, "Depósito inicial");
+    contaInv.aplicarRendimento(0.10);
+
+    listaTributaveis.add(contaInv);
 
     // Adiciona a conta corrente à lista.
     listaTributaveis.add(ccNatan);
